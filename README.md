@@ -6,7 +6,8 @@ Do make this docker you need
 
 Make the docker:
 
-   `docker build -t maya .`
+* Edit the Dockerfile to add your license and change user (see header)
+* `docker build -t maya .`
 
 Run the docker with X11 to view Maya:
 
