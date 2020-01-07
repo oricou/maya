@@ -1,0 +1,12 @@
+docker run \
+   `# X11 sharing`                           \
+   -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0:rw \
+   --device=/dev/dri:/dev/dri                \
+   --device=/dev/snd:/dev/snd                \
+                                             \
+   `# maya-environment (thanks mottoso!!)`   \
+   -e MAYA_DISABLE_CIP=1                     \
+   -v /home/ricou:/home/ricou:rw             \
+   --rm                                      \
+   --name maya_run                           \
+   -ti maya
