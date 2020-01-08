@@ -78,7 +78,7 @@ RUN wget https://bootstrap.pypa.io/get-pip.py && \
 
 
 RUN echo 'root:tito' | chpasswd
-RUN useradd --uid 17041 ricou
+RUN useradd --uid 1000 ricou
 #USER ricou
 #WORKDIR /home/ricou
 #ENV DISPLAY unix:0.0
